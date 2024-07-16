@@ -80,7 +80,7 @@ def play_game():
         if human_turn:
             while True:
                 try:
-                    move = input("Enter your move (row and column, e.g., '0 0' for the top-left corner): ").split()
+                    move = input("Enter your move (row then column like '0 0' for the top-left corner): ").split()
                     move = [int(x) for x in move]
                     if len(move) != 2 or not (0 <= move[0] < 3 and 0 <= move[1] < 3):
                         print("Invalid input. Please enter two integers within the range 0 to 2.")
